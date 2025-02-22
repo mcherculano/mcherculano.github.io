@@ -13,103 +13,90 @@
     body {
       font-family: 'Open Sans', sans-serif;
       margin: 0;
-      padding: 80px;
-      max-width: 1600px;
+      padding: 24px;
+      max-width: 1200px;
       margin: auto;
+    }
+    .menu {
+      background: #333;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 15px;
+      display: inline-block;
+    }
+    .menu a:hover {
+      background: #555;
     }
     .top-container {
       display: flex;
       align-items: flex-start;
-      gap: 60px;
-      margin-top: 50px;
-    }
-    .left-container {
-      display: flex;
-      align-items: flex-start;
-      gap: 40px;
-      flex: 2;
+      gap: 18px;
+      margin-top: 24px;
     }
     .profile-photo {
-      width: 300px;
+      width: 144px;
       height: auto;
       border-radius: 15px;
     }
     .contact-info {
-      font-size: 20px;
+      font-size: 14.4px;
       color: #555;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
     }
     .contact-info p {
-      margin: 8px 0;
+      margin: 3.6px 0;
     }
     .social-links {
       display: flex;
-      gap: 20px;
-      margin-top: 20px;
+      gap: 12px;
+      margin-top: 12px;
     }
     .social-links a {
-      font-size: 32px;
+      font-size: 19.2px;
       color: #333;
     }
-    .updates {
-      flex: 1;
-      font-size: 20px;
-      border-left: 6px solid #0073e6;
-      padding-left: 25px;
-      background: #f0f8ff;
-      padding: 20px;
-      max-height: 300px;
-      overflow-y: auto;
-    }
-    .bottom-container {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 50px;
-    }
     .description {
-      font-size: 20px;
-      line-height: 2;
-      flex: 1;
+      font-size: 14.4px;
+      line-height: 1.68;
+      margin-top: 18px;
+      text-align: justify;
     }
   </style>
 </head>
 
 <body>
+  <div class="menu">
+    <a href="index.html">About</a>
+    <a href="Resume.html">Resume</a>
+    <a href="Research.html">Research</a>
+    <a href="Teaching.html">Teaching</a>
+    <a href="https://github.com/mcherculano">Code</a>
+  </div>
+
   <div class="top-container">
-    <div class="left-container">
-      <img class="profile-photo" src="img/me_(1).jpg">
-      <div class="contact-info">
-        <p><strong>Contact Information</strong></p>
-        <p>miguel.herculano@glasgow.ac.uk</p>
-        <p>Adam Smith Business School, University of Glasgow</p>
-        <p>2 Discovery Place, G11 6EY, Glasgow, UK</p>
-        <div class="social-links">
-          <a href="https://github.com/mcherculano" target="_blank"><i class="fab fa-github"></i></a>
-          <a href="https://linkedin.com/in/mcherculano" target="_blank"><i class="fab fa-linkedin"></i></a>
-          <a href="https://twitter.com/mcherculano" target="_blank"><i class="fab fa-x-twitter"></i></a>
-        </div>
+    <img class="profile-photo" src="img/me_(1).jpg">
+    <div class="contact-info">
+      <p><strong>Contact Information</strong></p>
+      <p>miguel.herculano@glasgow.ac.uk</p>
+      <p>Adam Smith Business School, University of Glasgow</p>
+      <p>2 Discovery Place, G11 6EY, Glasgow, UK</p>
+      <div class="social-links">
+        <a href="https://github.com/mcherculano" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/mcherculano" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://twitter.com/mcherculano" target="_blank"><i class="fab fa-x-twitter"></i></a>
       </div>
     </div>
-    <!-- <div class="updates">
-      <h3>Latest Updates</h3>
-      <p><strong>01/01/2025:</strong> Exploring Gaussian Process Regression for macroeconomic modeling.</p>
-      <p><strong>15/12/2024:</strong> Presented research on financial econometrics at XYZ conference.</p>
-      <p><strong>10/11/2024:</strong> Published a new paper on applied macroeconometrics.</p>
-      <p><strong>05/10/2024:</strong> Joined a research collaboration on economic forecasting.</p>
-    </div> -->
   </div>
   
-  <div class="bottom-container">
-    <div class="description">
-      <p>
-        I am a Lecturer (Assistant Professor) in Financial Economics at the <a href="https://www.gla.ac.uk/schools/business/">Adam Smith Business School</a> and an Advisor at the <a href="https://www.turing.ac.uk/">Alan Turing Institute</a>.<br><br>
-        Before joining Glasgow, I worked as a Quant for an asset management firm in London, and have taught at the School of Economics of the University of Nottingham.
-        I was a post-doc researcher at the University of Freiburg after completing a Ph.D. in Financial Economics at the University of Glasgow. My teaching & research interests lie in the intersection of macroeconomics, finance, and applied econometrics.
-      </p>
-    </div>
+  <div class="description">
+    <p>
+      I am a Lecturer (Assistant Professor) in Financial Economics at the <a href="https://www.gla.ac.uk/schools/business/">Adam Smith Business School</a> and an Advisor at the <a href="https://www.turing.ac.uk/">Alan Turing Institute</a>.<br><br>
+      Before joining Glasgow, I worked as a Quant for an asset management firm in London, and have taught at the School of Economics of the University of Nottingham.
+      I was a post-doc researcher at the University of Freiburg after completing a Ph.D. in Financial Economics at the University of Glasgow. My teaching & research interests lie in the intersection of macroeconomics, finance, and applied econometrics.
+    </p>
   </div>
 </body>
 

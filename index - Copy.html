@@ -3,100 +3,112 @@
 
 <head>
   <title>Miguel C. Herculano</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
   <link href="css/frame.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="css/controls.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="css/custom.css" media="screen" rel="stylesheet" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <script src="js/menu.js"></script>
   <style>
+    .menu-index {
+      color: rgb(255, 255, 255) !important;
+      opacity: 1 !important;
+      font-weight: 700 !important;
+    }
     body {
       font-family: 'Open Sans', sans-serif;
       margin: 0;
-      padding: 24px;
-      max-width: 1200px;
+      padding: 64px;
+      max-width: 1280px;
       margin: auto;
-    }
-    .menu {
-      background: #333;
-      padding: 10px 0;
-      text-align: center;
-    }
-    .menu a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 15px;
-      display: inline-block;
-    }
-    .menu a:hover {
-      background: #555;
     }
     .top-container {
       display: flex;
       align-items: flex-start;
-      gap: 18px;
-      margin-top: 24px;
+      gap: 48px;
+      margin-top: 40px;
+    }
+    .left-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 32px;
+      flex: 2;
     }
     .profile-photo {
-      width: 144px;
+      width: 240px;
       height: auto;
       border-radius: 15px;
     }
     .contact-info {
-      font-size: 14.4px;
+      font-size: 16px;
       color: #555;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
     }
     .contact-info p {
-      margin: 3.6px 0;
+      margin: 6px 0;
     }
     .social-links {
       display: flex;
-      gap: 12px;
-      margin-top: 12px;
+      gap: 16px;
+      margin-top: 16px;
     }
     .social-links a {
-      font-size: 19.2px;
+      font-size: 25.6px;
       color: #333;
     }
+    .updates {
+      flex: 1;
+      font-size: 16px;
+      border-left: 4.8px solid #0073e6;
+      padding-left: 20px;
+      background: #f0f8ff;
+      padding: 16px;
+      max-height: 240px;
+      overflow-y: auto;
+    }
+    .bottom-container {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 40px;
+    }
     .description {
-      font-size: 14.4px;
-      line-height: 1.68;
-      margin-top: 18px;
-      text-align: justify;
+      font-size: 16px;
+      line-height: 1.6;
+      flex: 1;
     }
   </style>
 </head>
 
 <body>
-  <div class="menu">
-    <a href="index.html">About</a>
-    <a href="Resume.html">Resume</a>
-    <a href="Research.html">Research</a>
-    <a href="Teaching.html">Teaching</a>
-    <a href="https://github.com/mcherculano">Code</a>
-  </div>
-
-  <div class="top-container">
-    <img class="profile-photo" src="img/me_(1).jpg">
-    <div class="contact-info">
-      <p><strong>Contact Information</strong></p>
-      <p>miguel.herculano@glasgow.ac.uk</p>
-      <p>Adam Smith Business School, University of Glasgow</p>
-      <p>2 Discovery Place, G11 6EY, Glasgow, UK</p>
-      <div class="social-links">
-        <a href="https://github.com/mcherculano" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="https://linkedin.com/in/mcherculano" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://twitter.com/mcherculano" target="_blank"><i class="fab fa-x-twitter"></i></a>
+  <div class="menu-container"></div>
+    <div class="left-container">
+      <img class="profile-photo" src="img/me_(1).jpg">
+      <div class="contact-info">
+        <p><strong>Contact Information</strong></p>
+        <p>miguel.herculano@glasgow.ac.uk</p>
+        <p>Adam Smith Business School, University of Glasgow</p>
+        <p>2 Discovery Place, G11 6EY, Glasgow, UK</p>
+        <div class="social-links">
+          <a href="https://github.com/mcherculano" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/mcherculano" target="_blank"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/mcherculano" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        </div>
       </div>
     </div>
   </div>
   
-  <div class="description">
-    <p>
-      I am a Lecturer (Assistant Professor) in Financial Economics at the <a href="https://www.gla.ac.uk/schools/business/">Adam Smith Business School</a> and an Advisor at the <a href="https://www.turing.ac.uk/">Alan Turing Institute</a>.<br><br>
-      Before joining Glasgow, I worked as a Quant for an asset management firm in London, and have taught at the School of Economics of the University of Nottingham.
-      I was a post-doc researcher at the University of Freiburg after completing a Ph.D. in Financial Economics at the University of Glasgow. My teaching & research interests lie in the intersection of macroeconomics, finance, and applied econometrics.
-    </p>
+  <div class="bottom-container">
+    <div class="description">
+      <p>
+        I am a Lecturer (Assistant Professor) in Financial Economics at the <a href="https://www.gla.ac.uk/schools/business/">Adam Smith Business School</a> and an Advisor at the <a href="https://www.turing.ac.uk/">Alan Turing Institute</a>.<br><br>
+        Before joining Glasgow, I worked as a Quant for an asset management firm in London, and have taught at the School of Economics of the University of Nottingham.
+        I was a post-doc researcher at the University of Freiburg after completing a Ph.D. in Financial Economics at the University of Glasgow. My teaching & research interests lie in the intersection of macroeconomics, finance, and applied econometrics.
+      </p>
+    </div>
   </div>
 </body>
 
